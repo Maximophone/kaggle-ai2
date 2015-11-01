@@ -1,0 +1,15 @@
+# This is a knowledge file
+# The syntax is the following:
+# concept1>relation>concept2
+Eiffel Tower>is an instance of>tower
+Eiffel Tower>has property>tall
+Eiffel Tower>has property>metallic
+Gustave Eiffel>is an instance of>man
+Gustave Eiffel>is an instance of>architect
+architect>is a kind of>human
+man>is a kind of>human
+woman>is a kind of>human
+plane>has part>plane wing
+plane wing>is part of>plane
+plane wing>is a kind of>wing
+plane wing>has property>long

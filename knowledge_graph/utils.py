@@ -21,3 +21,12 @@ def select(db_file,sql):
 		for row in c.execute(sql):
 			result.append(row)
 	return result
+
+def parse_knowledge_file(file_name):
+	with open(file_name,'rb') as f:
+		kstring = f.read()
+	lines = kstring.split('\r\n')
+	lines = [l.split('#')[0] for l in lines]
+	tuples = [tuple(l.split('>')) for l in lines]
+	statements = [t for t in tuples if len(t)==3]
+	return statements
